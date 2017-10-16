@@ -5,21 +5,11 @@ def key_obtained():
     global key
     key = True
 
-def begin():
-    print "Let me, the author, introduce you with yourself. Are you feeling something in particular?"
-
-    choice = raw_input("What shall it be - yes or no?\n")
-
-    if "yes" in choice:
-        print "Very good, a friend of mine. Now let's proceed to the forest"
-        forest()
-    else:
-        bad("If you dont search into yourself, you will never find it. Goodbye.")
-
+    
 def forest():
-    print "You are alone in the forest. A gloomy figure approaches. Do you hug it or run?"
+    print "You are alone in the forest. A gloomy figure approaches. Do you <confront> it or <run>?"
     choice = raw_input('> ')
-    if "hug" in choice:
+    if "confront" in choice:
         print "You are a brave little man. But i must warn you that in this story the author made you 10 years old. Take that into consideration when the game wants your answer. For now, you hugged the figure and it takes you on a journey"
         two_ways()
     elif "run" in choice:
